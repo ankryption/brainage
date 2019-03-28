@@ -1,9 +1,9 @@
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 
-import Question from '../screens/Question';
+import Test from '../screens/Test';
 
 export default createAppContainer(
   createSwitchNavigator({
-    Home: Question,
+    Home: Test,
   })
 );

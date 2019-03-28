@@ -15,7 +15,7 @@ export default class Test extends React.Component {
 
   render() {
     return (
-      <Container style={styles.container}>
+      <Container style={styles.wrapper}>
         <HeaderBar question={[1, 11]} />
         <Content style={styles.content}>
           <Question text='What day of the week is it?' />
@@ -41,15 +41,7 @@ export default class Test extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
-  header: {
-    fontSize: 16,
-    lineHeight: 16,
-    fontWeight: 'bold',
-  },
+  wrapper: {},
   content: {},
   footer: {
     left: 0,
