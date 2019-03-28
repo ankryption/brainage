@@ -1,15 +1,9 @@
 import React from 'react';
 import { StyleSheet, Image, TextInput, View } from 'react-native';
-import {
-  Container,
-  Header,
-  Content,
-  Body,
-  Text,
-  Button,
-  Icon,
-} from 'native-base';
+import { Container, Content, Body, Text, Button, Icon } from 'native-base';
 import images from '../assets/images';
+import HeaderBar from '../components/HeaderBar';
+
 export default class Question extends React.Component {
   static navigationOptions = {
     header: null,
@@ -18,11 +12,7 @@ export default class Question extends React.Component {
   render() {
     return (
       <Container style={styles.container}>
-        <Header>
-          <Body>
-            <Text style={styles.header}>Question 1 of 11</Text>
-          </Body>
-        </Header>
+        <HeaderBar question={[1, 11]} />
         <Content style={styles.content}>
           <Text style={styles.question}>What day of the week is it?</Text>
           <View style={styles.iconContainer}>
