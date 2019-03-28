@@ -5,9 +5,10 @@ import { Container, Content, Text, Button, Icon } from 'native-base';
 import images from '../assets/images';
 
 import Input from '../components/Input';
+import Question from '../components/Question';
 import HeaderBar from '../components/HeaderBar';
 
-export default class Question extends React.Component {
+export default class Test extends React.Component {
   static navigationOptions = {
     header: null,
   };
@@ -17,11 +18,7 @@ export default class Question extends React.Component {
       <Container style={styles.container}>
         <HeaderBar question={[1, 11]} />
         <Content style={styles.content}>
-          <Text style={styles.question}>What day of the week is it?</Text>
-          <View style={styles.iconContainer}>
-            <Image source={images.speaker} style={styles.icon} />
-            <Text style={styles.iconTitle}>Hear Question</Text>
-          </View>
+          <Question text='What day of the week is it?' />
           <Input defaultValue='Enter text' />
         </Content>
         <View style={styles.footer}>
@@ -54,37 +51,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   content: {},
-  question: {
-    padding: 20,
-    fontSize: 18,
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
-  iconContainer: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  icon: {},
-  iconTitle: {
-    padding: 4,
-    fontSize: 10,
-    maxWidth: 60,
-    textAlign: 'center',
-  },
-  inputWrapper: {
-    marginTop: 60,
-    marginLeft: 60,
-    marginRight: 60,
-    marginBottom: 20,
-    padding: 8,
-    borderBottomWidth: 1,
-    borderBottomColor: 'grey',
-  },
-  input: {
-    fontSize: 24,
-    alignSelf: 'center',
-  },
   footer: {
     left: 0,
     bottom: 0,
