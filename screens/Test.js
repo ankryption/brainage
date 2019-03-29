@@ -2,10 +2,9 @@ import React from 'react';
 import { StyleSheet, Image, View } from 'react-native';
 import { Container, Content, Text, Button, Icon } from 'native-base';
 
-import images from '../assets/images';
-
 import Input from '../components/Input';
 import Question from '../components/Question';
+import Footer from '../components/Footer';
 import HeaderBar from '../components/HeaderBar';
 
 export default class Test extends React.Component {
@@ -21,20 +20,7 @@ export default class Test extends React.Component {
           <Question text='What day of the week is it?' />
           <Input defaultValue='Enter text' />
         </Content>
-        <View style={styles.footer}>
-          <Button iconLeft transparent bordered style={styles.button}>
-            <Icon name='home' />
-            <Text>Home</Text>
-          </Button>
-          <Button iconLeft primary style={styles.button}>
-            <Icon name='paper-plane' />
-            <Text>Next</Text>
-          </Button>
-          <View style={styles.iconContainer}>
-            <Image source={images.help} style={styles.icon} />
-            <Text style={styles.iconTitle}>Help</Text>
-          </View>
-        </View>
+        <Footer />
       </Container>
     );
   }
@@ -43,16 +29,4 @@ export default class Test extends React.Component {
 const styles = StyleSheet.create({
   wrapper: {},
   content: {},
-  footer: {
-    left: 0,
-    bottom: 0,
-    padding: 32,
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-    position: 'absolute',
-  },
-  button: {
-    marginLeft: 8,
-  },
 });
