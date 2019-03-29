@@ -2,10 +2,12 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import { Container, Content } from 'native-base';
 
+import sounds from '../assets/sounds';
 import Input from '../components/Input';
 import Question from '../components/Question';
 import Footer from '../components/Footer';
 import HeaderBar from '../components/HeaderBar';
+import PlaySound from '../components/PlaySound';
 
 export default class Question1 extends React.Component {
   render() {
@@ -14,6 +16,7 @@ export default class Question1 extends React.Component {
         <HeaderBar question={[1, 11]} />
         <Content style={styles.content}>
           <Question title='What day of the week is it?' />
+          <PlaySound file={sounds.sound2} />
           <Input />
         </Content>
         <Footer next='Question2' />
