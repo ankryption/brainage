@@ -13,7 +13,7 @@ export default class Test extends React.Component {
       <Container style={styles.wrapper}>
         <HeaderBar question={[1, 11]} />
         <Content style={styles.content}>
-          <Question text='What day of the week is it?' />
+          <Question title='What day of the week is it?' />
           <Input defaultValue='Enter text' />
         </Content>
         <Footer />
