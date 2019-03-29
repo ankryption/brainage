@@ -1,13 +1,14 @@
 import React from 'react';
 import { StyleSheet, View, Image, Text } from 'react-native';
 import { Button, Icon } from 'native-base';
+import { withNavigation } from 'react-navigation';
 
 import images from '../assets/images';
 
-export default class Footer extends React.Component {
+class Footer extends React.Component {
   render() {
     const { navigation, next } = this.props;
-    console.log('next', next);
+
     return (
       <View style={styles.wrapper}>
         <View>
@@ -59,3 +60,5 @@ const styles = StyleSheet.create({
   },
   icon: {},
 });
+
+export default withNavigation(Footer);

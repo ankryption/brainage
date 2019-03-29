@@ -5,7 +5,7 @@ import images from '../assets/images';
 
 export default class Input extends React.Component {
   render() {
-    const { defaultValue } = this.props;
+    const { value } = this.props;
 
     return (
       <View>
@@ -14,7 +14,7 @@ export default class Input extends React.Component {
             maxLength={40}
             editable={true}
             style={styles.input}
-            defaultValue={defaultValue}
+            defaultValue={value ? value : 'Enter text'}
           />
         </View>
         {/* <View style={styles.iconContainer}>

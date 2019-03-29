@@ -9,16 +9,14 @@ import HeaderBar from '../components/HeaderBar';
 
 export default class Question1 extends React.Component {
   render() {
-    const { navigation } = this.props;
-
     return (
       <Container style={styles.wrapper}>
         <HeaderBar question={[1, 11]} />
         <Content style={styles.content}>
           <Question title='What day of the week is it?' />
-          <Input defaultValue='Enter text' />
+          <Input />
         </Content>
-        <Footer next='Question2' navigation={navigation} />
+        <Footer next='Question2' />
       </Container>
     );
   }
