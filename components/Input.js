@@ -17,10 +17,10 @@ export default class Input extends React.Component {
             defaultValue={defaultValue}
           />
         </View>
-        <View style={styles.iconContainer}>
+        {/* <View style={styles.iconContainer}>
           <Image source={images.microphone} style={styles.icon} />
           <Text style={styles.iconTitle}>Touch to speak</Text>
-        </View>
+        </View> */}
       </View>
     );
   }
