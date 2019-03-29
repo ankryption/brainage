@@ -14,13 +14,13 @@ export default class Login extends React.Component {
           </View>
           <View style={styles.buttonContainer}>
             <Button
+              info
               style={styles.button}
               onPress={() => navigation.navigate('Question1')}
             >
               <Text style={{ color: '#fff' }}>SignUp</Text>
             </Button>
             <Button
-              info
               style={styles.button}
               onPress={() => navigation.navigate('Question1')}
             >
@@ -53,6 +53,7 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     flex: 1,
+    marginTop: 256,
     alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'center',

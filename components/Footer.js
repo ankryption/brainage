@@ -12,7 +12,12 @@ class Footer extends React.Component {
     return (
       <View style={styles.wrapper}>
         <View>
-          <Button transparent bordered style={styles.button}>
+          <Button
+            transparent
+            bordered
+            style={styles.button}
+            onPress={() => navigation.navigate('Home')}
+          >
             <Icon name='home' />
             <Text style={{ color: '#000' }}>Home</Text>
           </Button>

@@ -8,7 +8,7 @@ import Question4 from '../screens/Question4';
 
 export default createAppContainer(
   createSwitchNavigator({
-    Home: Question4,
+    Home: Login,
     Question1: Question1,
     Question2: Question2,
     Question3: Question3,
