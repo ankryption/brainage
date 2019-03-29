@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, Image, View } from 'react-native';
-import { Container, Content, Text, Button, Icon } from 'native-base';
+import { StyleSheet } from 'react-native';
+import { Container, Content } from 'native-base';
 
 import Input from '../components/Input';
 import Question from '../components/Question';
@@ -8,10 +8,6 @@ import Footer from '../components/Footer';
 import HeaderBar from '../components/HeaderBar';
 
 export default class Test extends React.Component {
-  static navigationOptions = {
-    header: null,
-  };
-
   render() {
     return (
       <Container style={styles.wrapper}>
