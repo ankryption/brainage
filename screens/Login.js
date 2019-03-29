@@ -15,14 +15,14 @@ export default class Login extends React.Component {
           <View style={styles.buttonContainer}>
             <Button
               style={styles.button}
-              onPress={() => navigation.navigate('Test')}
+              onPress={() => navigation.navigate('Question1')}
             >
               <Text style={{ color: '#fff' }}>SignUp</Text>
             </Button>
             <Button
               info
               style={styles.button}
-              onPress={() => navigation.navigate('Test')}
+              onPress={() => navigation.navigate('Question1')}
             >
               <Text style={{ color: '#fff' }}>Login</Text>
             </Button>

@@ -6,6 +6,8 @@ import images from '../assets/images';
 
 export default class Footer extends React.Component {
   render() {
+    const { navigation, next } = this.props;
+    console.log('next', next);
     return (
       <View style={styles.wrapper}>
         <View>
@@ -19,7 +21,12 @@ export default class Footer extends React.Component {
           <Text style={styles.iconTitle}>Help</Text>
         </View>
         <View>
-          <Button iconLeft primary style={styles.button}>
+          <Button
+            iconLeft
+            primary
+            style={styles.button}
+            onPress={() => navigation.navigate(next)}
+          >
             <Icon name='paper-plane' />
             <Text style={{ color: '#fff' }}>Next</Text>
           </Button>

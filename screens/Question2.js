@@ -7,16 +7,16 @@ import Question from '../components/Question';
 import Footer from '../components/Footer';
 import HeaderBar from '../components/HeaderBar';
 
-export default class Test extends React.Component {
+export default class Question2 extends React.Component {
   render() {
     return (
       <Container style={styles.wrapper}>
-        <HeaderBar question={[1, 11]} />
+        <HeaderBar question={[2, 11]} />
         <Content style={styles.content}>
-          <Question title='What day of the week is it?' />
+          <Question title='What is the year?' />
           <Input defaultValue='Enter text' />
         </Content>
-        <Footer />
+        <Footer next='Question3' navigation={navigation} />
       </Container>
     );
   }
