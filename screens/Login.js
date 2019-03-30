@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Image, View } from 'react-native';
 import { Container, Content, Text, Button, Icon } from 'native-base';
+
 import images from '../assets/images';
 
 export default class Login extends React.Component {
@@ -22,7 +23,7 @@ export default class Login extends React.Component {
           </Button>
           <Button
             style={styles.button}
-            onPress={() => navigation.navigate('Question1')}
+            onPress={() => navigation.navigate('Onboard1')}
           >
             <Text style={styles.buttonText}>Login</Text>
           </Button>

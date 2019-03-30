@@ -7,16 +7,18 @@ import images from '../assets/images';
 
 class Footer extends React.Component {
   render() {
-    let { navigation, next, text } = this.props;
+    let { navigation, next, text, nohelp } = this.props;
     if (!text) text = 'Next';
 
     return (
       <Grid style={styles.wrapper}>
         <Col style={styles.left}>
-          <View style={styles.help}>
-            <Image source={images.help} style={styles.icon} />
-            <Text style={styles.iconTitle}>Help</Text>
-          </View>
+          {!nohelp ? (
+            <View style={styles.help}>
+              <Image source={images.help} style={styles.icon} />
+              <Text style={styles.iconTitle}>Help</Text>
+            </View>
+          ) : null}
         </Col>
         <Col style={styles.right}>
           <View style={styles.next}>

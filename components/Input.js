@@ -3,7 +3,7 @@ import { StyleSheet, View, TextInput } from 'react-native';
 
 export default class Input extends React.Component {
   render() {
-    const { value } = this.props;
+    const { value, password, keyboard } = this.props;
 
     return (
       <View>
@@ -11,7 +11,9 @@ export default class Input extends React.Component {
           <TextInput
             maxLength={40}
             editable={true}
+            keyboardType={keyboard ? keyboard : 'default'}
             style={styles.input}
+            secureTextEntry={password}
             placeholder={value ? value : 'Enter text'}
           />
         </View>

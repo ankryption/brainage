@@ -1,6 +1,8 @@
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 
 import Login from '../screens/Login';
+import Onboard1 from '../screens/Onboard1';
+import Onboard2 from '../screens/Onboard2';
 import Question1 from '../screens/Question1';
 import Question2 from '../screens/Question2';
 import Question3 from '../screens/Question3';
@@ -24,6 +26,8 @@ import Question19 from '../screens/Question19';
 export default createAppContainer(
   createSwitchNavigator({
     Home: Login,
+    Onboard1: Onboard1,
+    Onboard2: Onboard2,
     Question1: Question1,
     Question2: Question2,
     Question3: Question3,
