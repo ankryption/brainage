@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Image, Text } from 'react-native';
-import { Button, Icon } from 'native-base';
+import { Button, Icon, Grid, Col } from 'native-base';
 import { withNavigation } from 'react-navigation';
 
 import images from '../assets/images';
@@ -10,46 +10,50 @@ class Footer extends React.Component {
     const { navigation, next } = this.props;
 
     return (
-      <View style={styles.wrapper}>
-        <View>
-          <Button
-            transparent
-            bordered
-            style={styles.button}
-            onPress={() => navigation.navigate('Home')}
-          >
-            <Icon name='home' />
-            <Text style={{ color: '#000' }}>Home</Text>
-          </Button>
-        </View>
-        <View style={styles.help}>
-          <Image source={images.help} style={styles.icon} />
-          <Text style={styles.iconTitle}>Help</Text>
-        </View>
-        <View>
-          <Button
-            iconLeft
-            primary
-            style={styles.button}
-            onPress={() => navigation.navigate(next)}
-          >
-            <Icon name='paper-plane' />
-            <Text style={{ color: '#fff' }}>Next</Text>
-          </Button>
-        </View>
-      </View>
+      <Grid style={styles.wrapper}>
+        <Col style={styles.left}>
+          <View style={styles.help}>
+            <Image source={images.help} style={styles.icon} />
+            <Text style={styles.iconTitle}>Help</Text>
+          </View>
+        </Col>
+        <Col style={styles.right}>
+          <View style={styles.next}>
+            <Button
+              iconLeft
+              primary
+              style={styles.button}
+              onPress={() => navigation.navigate(next)}
+            >
+              <Icon name='paper-plane' />
+              <Text style={styles.buttonText}>Next</Text>
+            </Button>
+          </View>
+        </Col>
+      </Grid>
     );
   }
 }
 
 const styles = StyleSheet.create({
   wrapper: {
-    padding: 8,
-    width: '100%',
-    display: 'flex',
-    textAlign: 'center',
-    flexDirection: 'row',
-    justifyContent: 'space-around',
+    left: 0,
+    right: 0,
+    bottom: 0,
+    padding: 16,
+    position: 'absolute',
+  },
+  left: {
+    alignItems: 'flex-start',
+  },
+  help: {
+    alignItems: 'center',
+  },
+  right: {
+    alignItems: 'flex-end',
+  },
+  next: {
+    alignItems: 'center',
   },
   button: {
     padding: 8,
@@ -58,12 +62,6 @@ const styles = StyleSheet.create({
   buttonText: {
     color: '#fff',
   },
-  help: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  icon: {},
 });
 
 export default withNavigation(Footer);
