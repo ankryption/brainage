@@ -7,7 +7,8 @@ import images from '../assets/images';
 
 class Footer extends React.Component {
   render() {
-    const { navigation, next } = this.props;
+    let { navigation, next, text } = this.props;
+    if (!text) text = 'Next';
 
     return (
       <Grid style={styles.wrapper}>
@@ -25,7 +26,7 @@ class Footer extends React.Component {
               onPress={() => navigation.navigate(next)}
             >
               <Icon name='paper-plane' />
-              <Text style={styles.buttonText}>Next</Text>
+              <Text style={styles.buttonText}>{text}</Text>
             </Button>
           </View>
         </Col>

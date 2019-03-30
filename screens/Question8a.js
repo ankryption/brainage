@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 import { Container, Content } from 'native-base';
 
 import sounds from '../assets/sounds';
@@ -10,18 +10,21 @@ import HeaderBar from '../components/HeaderBar';
 import PlaySound from '../components/PlaySound';
 import Microphone from '../components/Microphone';
 
-export default class Question7 extends React.Component {
+export default class Question8a extends React.Component {
   render() {
     return (
       <Container style={styles.wrapper}>
-        <HeaderBar question={[7, 11]} />
+        <HeaderBar question={[8, 11]} />
         <Content style={styles.content}>
-          <Question title='What were the 5 objects you were asked you to remember?' />
+          <Question title='You will now hear a series of numbers, once you ehear the numbers, recite them backwards.' />
+          <View style={styles.extension}>
+            <Text>i.e if you hear 47, you would say 74</Text>
+          </View>
           <PlaySound file={sounds.sound2} />
           <Input />
           <Microphone />
         </Content>
-        <Footer next='Question8a' />
+        <Footer next='Question8b' />
       </Container>
     );
   }
@@ -30,4 +33,10 @@ export default class Question7 extends React.Component {
 const styles = StyleSheet.create({
   wrapper: {},
   content: {},
+  extension: {
+    marginBottom: 32,
+    fontSize: 17,
+    fontWeight: 'bold',
+    alignItems: 'center',
+  },
 });
