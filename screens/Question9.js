@@ -10,11 +10,11 @@ import HeaderBar from '../components/HeaderBar';
 import PlaySound from '../components/PlaySound';
 import Microphone from '../components/Microphone';
 
-export default class Question8 extends React.Component {
+export default class Question9 extends React.Component {
   render() {
     return (
       <Container style={styles.wrapper}>
-        <HeaderBar question={[8, 11]} />
+        <HeaderBar question={[9, 11]} />
         <Content style={styles.content}>
           <Question title='You will now hear a series of numbers, once you ehear the numbers, recite them backwards.' />
           <View style={styles.extension}>
@@ -24,7 +24,7 @@ export default class Question8 extends React.Component {
           <Input />
           <Microphone />
         </Content>
-        <Footer next='Question9' />
+        <Footer next='Question10' />
       </Container>
     );
   }
