@@ -5,6 +5,8 @@ import Question1 from '../screens/Question1';
 import Question2 from '../screens/Question2';
 import Question3 from '../screens/Question3';
 import Question4 from '../screens/Question4';
+import Question5a from '../screens/Question5a';
+import Question5b from '../screens/Question5b';
 import Question6 from '../screens/Question6';
 import Question7 from '../screens/Question7';
 import Question8a from '../screens/Question8a';
@@ -18,11 +20,13 @@ import Question11d from '../screens/Question11d';
 
 export default createAppContainer(
   createSwitchNavigator({
-    Home: Login,
+    Home: Question4,
     Question1: Question1,
     Question2: Question2,
     Question3: Question3,
     Question4: Question4,
+    Question5a: Question5a,
+    Question5b: Question5b,
     Question6: Question6,
     Question7: Question7,
     Question8a: Question8a,

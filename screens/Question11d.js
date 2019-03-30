@@ -21,7 +21,7 @@ export default class Question11c extends React.Component {
           <Input />
           <Microphone />
         </Content>
-        <Footer next='Login' text='Finish' />
+        <Footer next='Home' text='Finish' />
       </Container>
     );
   }
