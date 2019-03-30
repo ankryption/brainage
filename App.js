@@ -31,8 +31,9 @@ export default class App extends React.Component {
   _loadResourcesAsync = async () => {
     return Promise.all([
       Asset.loadAsync([
-        require('./assets/images/robot-dev.png'),
-        require('./assets/images/robot-prod.png'),
+        require('./assets/images/help.png'),
+        require('./assets/images/speaker.png'),
+        require('./assets/images/microphone.png'),
       ]),
       Font.loadAsync({
         'open-sans': require('./assets/fonts/OpenSans-Regular.ttf'),
