@@ -14,7 +14,7 @@ export default class Question1 extends React.Component {
   render() {
     return (
       <Container style={styles.wrapper}>
-        <HeaderBar question={[1, 11]} />
+        <HeaderBar question={[1, 19]} />
         <Content style={styles.content}>
           <Question title='What day of the week is it?' />
           <PlaySound file={sounds.sound2} />

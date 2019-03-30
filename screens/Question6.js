@@ -10,13 +10,16 @@ import HeaderBar from '../components/HeaderBar';
 import PlaySound from '../components/PlaySound';
 import Microphone from '../components/Microphone';
 
-export default class Question4 extends React.Component {
+export default class Question6 extends React.Component {
   render() {
     return (
       <Container style={styles.wrapper}>
-        <HeaderBar question={[6, 11]} />
+        <HeaderBar question={[6, 19]} />
         <Content style={styles.content}>
-          <Question title='Name as many animals as you can in 1 minute' />
+          <Question title='You have $100 and you go to the store and buy a dozen apples for $3 and a tricycle for $20.' />
+          <View style={styles.extension}>
+            <Text>A. How much do you have left?</Text>
+          </View>
           <PlaySound file={sounds.sound2} />
           <Microphone />
         </Content>

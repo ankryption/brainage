@@ -14,7 +14,7 @@ export default class Question3 extends React.Component {
   render() {
     return (
       <Container style={styles.wrapper}>
-        <HeaderBar question={[3, 11]} />
+        <HeaderBar question={[3, 19]} />
         <Content style={styles.content}>
           <Question title='What state are we in?' />
           <PlaySound file={sounds.sound2} />

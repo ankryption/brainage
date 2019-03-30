@@ -14,12 +14,17 @@ export default class Question9 extends React.Component {
   render() {
     return (
       <Container style={styles.wrapper}>
-        <HeaderBar question={[9, 11]} />
+        <HeaderBar question={[9, 19]} />
         <Content style={styles.content}>
-          <Question title='This is a clock face, please put the hour markers and the time, ten minutes to eleven o`clock.' />
+          <Question title='You will now hear a series of numbers, once you ehear the numbers, recite them backwards.' />
+          <View style={styles.extension}>
+            <Text>i.e if you hear 47, you would say 74</Text>
+          </View>
           <PlaySound file={sounds.sound2} />
+          <Input />
+          <Microphone />
         </Content>
-        <Footer next='Question10a' />
+        <Footer next='Question10' />
       </Container>
     );
   }

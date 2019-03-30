@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text } from 'react-native';
-import { Container, Content, View, Button } from 'native-base';
+import { StyleSheet, View, Text } from 'react-native';
+import { Container, Content } from 'native-base';
 
 import sounds from '../assets/sounds';
 import Input from '../components/Input';
@@ -10,20 +10,21 @@ import HeaderBar from '../components/HeaderBar';
 import PlaySound from '../components/PlaySound';
 import Microphone from '../components/Microphone';
 
-export default class Question5a extends React.Component {
+export default class Question10 extends React.Component {
   render() {
     return (
       <Container style={styles.wrapper}>
-        <HeaderBar question={[5, 11]} />
+        <HeaderBar question={[10, 19]} />
         <Content style={styles.content}>
-          <Question title='You have $100 and you go to the store and buy a dozen apples for $3 and a tricycle for $20.' />
+          <Question title='You will now hear a series of numbers, once you ehear the numbers, recite them backwards.' />
           <View style={styles.extension}>
-            <Text>A. How much did you spend?</Text>
+            <Text>i.e if you hear 47, you would say 74</Text>
           </View>
           <PlaySound file={sounds.sound2} />
+          <Input />
           <Microphone />
         </Content>
-        <Footer next='Question5b' />
+        <Footer next='Question11' />
       </Container>
     );
   }

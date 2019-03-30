@@ -14,7 +14,7 @@ export default class Question4 extends React.Component {
   render() {
     return (
       <Container style={styles.wrapper}>
-        <HeaderBar question={[4, 11]} />
+        <HeaderBar question={[4, 19]} />
         <Content style={styles.content}>
           <Question
             hide-icon='true'
@@ -26,7 +26,7 @@ export default class Question4 extends React.Component {
           <PlaySound file={sounds.sound2} />
           <Microphone />
         </Content>
-        <Footer next='Question5a' />
+        <Footer next='Question5' />
       </Container>
     );
   }

@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
-import { Container, Content } from 'native-base';
+import { StyleSheet, Text } from 'react-native';
+import { Container, Content, View, Button } from 'native-base';
 
 import sounds from '../assets/sounds';
 import Input from '../components/Input';
@@ -14,14 +14,13 @@ export default class Question7 extends React.Component {
   render() {
     return (
       <Container style={styles.wrapper}>
-        <HeaderBar question={[7, 11]} />
+        <HeaderBar question={[7, 19]} />
         <Content style={styles.content}>
-          <Question title='What were the 5 objects you were asked you to remember?' />
+          <Question title='Name as many animals as you can in 1 minute' />
           <PlaySound file={sounds.sound2} />
-          <Input />
           <Microphone />
         </Content>
-        <Footer next='Question8a' />
+        <Footer next='Question8' />
       </Container>
     );
   }
@@ -30,4 +29,10 @@ export default class Question7 extends React.Component {
 const styles = StyleSheet.create({
   wrapper: {},
   content: {},
+  extension: {
+    marginBottom: 32,
+    fontSize: 17,
+    fontWeight: 'bold',
+    alignItems: 'center',
+  },
 });
