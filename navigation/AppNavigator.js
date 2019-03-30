@@ -12,6 +12,7 @@ import Question7 from '../screens/Question7';
 import Question8a from '../screens/Question8a';
 import Question8b from '../screens/Question8b';
 import Question8c from '../screens/Question8c';
+import Question9 from '../screens/Question9';
 import Question11 from '../screens/Question11';
 import Question11a from '../screens/Question11a';
 import Question11b from '../screens/Question11b';
@@ -32,6 +33,7 @@ export default createAppContainer(
     Question8a: Question8a,
     Question8b: Question8b,
     Question8c: Question8c,
+    Question9: Question9,
     Question11: Question11,
     Question11a: Question11a,
     Question11b: Question11b,
