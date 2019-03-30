@@ -20,8 +20,7 @@ class Footer extends React.Component {
         <Col style={styles.right}>
           <View style={styles.next}>
             <Button
-              iconLeft
-              primary
+              iconRight
               style={styles.button}
               onPress={() => navigation.navigate(next)}
             >
@@ -58,8 +57,11 @@ const styles = StyleSheet.create({
   button: {
     padding: 8,
     minWidth: 80,
+    borderRadius: 16,
+    backgroundColor: '#D8D8D8',
   },
   buttonText: {
+    fontSize: 18,
     color: '#fff',
   },
 });

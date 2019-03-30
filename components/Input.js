@@ -14,7 +14,7 @@ export default class Input extends React.Component {
             maxLength={40}
             editable={true}
             style={styles.input}
-            defaultValue={value ? value : 'Enter text'}
+            placeholder={value ? value : 'Enter text'}
           />
         </View>
         {/* <View style={styles.iconContainer}>
