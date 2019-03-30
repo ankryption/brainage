@@ -33,11 +33,13 @@ export default class PlaySound extends React.Component {
     }
   }
   render() {
+    const { style, title } = this.props;
+
     return (
       <TouchableHighlight underlayColor='#fff' onPress={this._playSound}>
-        <View style={styles.iconContainer}>
+        <View style={style ? style : styles.iconContainer}>
           <Image source={images.speaker} style={styles.icon} />
-          <Text style={styles.iconTitle}>Hear Question</Text>
+          <Text style={title ? title : styles.iconTitle}>Hear Question</Text>
         </View>
       </TouchableHighlight>
     );

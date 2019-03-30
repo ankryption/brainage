@@ -20,7 +20,7 @@ export default class Landing extends React.Component {
             <Button
               info
               style={styles.button}
-              onPress={() => navigation.navigate('Question1')}
+              onPress={() => navigation.navigate('Instruction1')}
             >
               <Text style={styles.buttonText}>Start</Text>
             </Button>
