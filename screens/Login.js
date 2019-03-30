@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Image, View } from 'react-native';
 import { Container, Content, Text, Button, Icon } from 'native-base';
+import images from '../assets/images';
 
 export default class Login extends React.Component {
   render() {
@@ -8,26 +9,24 @@ export default class Login extends React.Component {
 
     return (
       <Container style={styles.wrapper}>
-        <Content style={styles.content}>
-          <View style={styles.logoContainer}>
-            <Text style={styles.logoText}>BRAINAGE</Text>
-          </View>
-          <View style={styles.buttonContainer}>
-            <Button
-              info
-              style={styles.button}
-              onPress={() => navigation.navigate('Question1')}
-            >
-              <Text style={{ color: '#fff' }}>SignUp</Text>
-            </Button>
-            <Button
-              style={styles.button}
-              onPress={() => navigation.navigate('Question1')}
-            >
-              <Text style={{ color: '#fff' }}>Login</Text>
-            </Button>
-          </View>
-        </Content>
+        <View style={styles.logoContainer}>
+          <Image source={images.brainage} style={styles.icon} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button
+            info
+            style={styles.button}
+            onPress={() => navigation.navigate('Question1')}
+          >
+            <Text style={styles.buttonText}>SignUp</Text>
+          </Button>
+          <Button
+            style={styles.button}
+            onPress={() => navigation.navigate('Question1')}
+          >
+            <Text style={styles.buttonText}>Login</Text>
+          </Button>
+        </View>
       </Container>
     );
   }
@@ -38,24 +37,23 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
   },
-  content: {},
   logoContainer: {
     padding: 16,
     height: 128,
-    marginTop: 64,
-  },
-  logoText: {
-    fontSize: 32,
-    textAlign: 'center',
+    marginTop: 128,
   },
   button: {
     margin: 16,
+    width: 128,
+    height: 64,
+    justifyContent: 'center',
+    backgroundColor: '#979797',
+  },
+  buttonText: {
+    fontFamily: 'italics',
+    fontSize: 24,
   },
   buttonContainer: {
-    flex: 1,
-    marginTop: 256,
-    alignItems: 'center',
-    flexDirection: 'row',
-    justifyContent: 'center',
+    marginTop: 90,
   },
 });
