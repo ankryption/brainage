@@ -25,7 +25,7 @@ export default class Question1 extends React.Component {
             <Text style={styles.option}>Less than High School Education</Text>
           </View>
         </Content>
-        <Footer nohelp next='Question1' />
+        <Footer nohelp next='Landing' />
       </Container>
     );
   }
