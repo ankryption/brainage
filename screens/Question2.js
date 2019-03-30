@@ -8,6 +8,7 @@ import Question from '../components/Question';
 import Footer from '../components/Footer';
 import HeaderBar from '../components/HeaderBar';
 import PlaySound from '../components/PlaySound';
+import Microphone from '../components/Microphone';
 
 export default class Question2 extends React.Component {
   render() {
@@ -18,6 +19,7 @@ export default class Question2 extends React.Component {
           <Question title='What is the year?' />
           <PlaySound file={sounds.sound2} />
           <Input />
+          <Microphone />
         </Content>
         <Footer next='Question3' />
       </Container>

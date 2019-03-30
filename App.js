@@ -36,9 +36,9 @@ export default class App extends React.Component {
         require('./assets/images/microphone.png'),
       ]),
       Font.loadAsync({
-        'open-sans': require('./assets/fonts/OpenSans-Regular.ttf'),
-        'open-sans-bold': require('./assets/fonts/OpenSans-Bold.ttf'),
-        'open-sans-italic': require('./assets/fonts/OpenSans-Italic.ttf'),
+        regular: require('./assets/fonts/OpenSans-Regular.ttf'),
+        bold: require('./assets/fonts/OpenSans-Bold.ttf'),
+        italics: require('./assets/fonts/OpenSans-Italic.ttf'),
       }),
     ]);
   };
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     fontSize: 16,
-    fontFamily: 'open-sans',
+    fontFamily: 'regular',
     backgroundColor: '#fff',
   },
 });

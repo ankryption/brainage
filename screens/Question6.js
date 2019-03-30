@@ -14,19 +14,13 @@ export default class Question4 extends React.Component {
   render() {
     return (
       <Container style={styles.wrapper}>
-        <HeaderBar question={[4, 11]} />
+        <HeaderBar question={[6, 11]} />
         <Content style={styles.content}>
-          <Question
-            hide-icon='true'
-            title='Please remember these 5 objects. We will ask you what they are again at a later time?'
-          />
-          <View style={styles.extension}>
-            <Text>Apple, Pen, Tie, House, Car</Text>
-          </View>
+          <Question title='Name as many animals as you can in 1 minute' />
           <PlaySound file={sounds.sound2} />
           <Microphone />
         </Content>
-        <Footer next='Question6' />
+        <Footer next='Question7' />
       </Container>
     );
   }

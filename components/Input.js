@@ -1,7 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, TextInput, Image, Text } from 'react-native';
-
-import images from '../assets/images';
+import { StyleSheet, View, TextInput } from 'react-native';
 
 export default class Input extends React.Component {
   render() {
@@ -16,10 +14,6 @@ export default class Input extends React.Component {
             style={styles.input}
             placeholder={value ? value : 'Enter text'}
           />
-        </View>
-        <View style={styles.iconContainer}>
-          <Image source={images.microphone} style={styles.icon} />
-          <Text style={styles.iconTitle}>Touch to speak</Text>
         </View>
       </View>
     );
