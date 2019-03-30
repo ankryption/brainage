@@ -10,16 +10,16 @@ import HeaderBar from '../components/HeaderBar';
 import PlaySound from '../components/PlaySound';
 import Microphone from '../components/Microphone';
 
-export default class Question9 extends React.Component {
+export default class Question10a extends React.Component {
   render() {
     return (
       <Container style={styles.wrapper}>
-        <HeaderBar question={[9, 11]} />
+        <HeaderBar question={[10, 11]} />
         <Content style={styles.content}>
-          <Question title='This is a clock face, please put the hour markers and the time, ten minutes to eleven o`clock.' />
+          <Question title='Please place an X in the triangle.' />
           <PlaySound file={sounds.sound2} />
         </Content>
-        <Footer next='Question10a' />
+        <Footer next='Question10b' />
       </Container>
     );
   }
