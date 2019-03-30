@@ -23,7 +23,7 @@ export default class Input extends React.Component {
 const styles = StyleSheet.create({
   wrapper: {
     padding: 8,
-    marginTop: 60,
+    marginTop: 30,
     marginLeft: 60,
     marginRight: 60,
     marginBottom: 20,
