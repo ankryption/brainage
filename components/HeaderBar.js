@@ -4,7 +4,7 @@ import { Header, Body, Text } from 'native-base';
 
 export default class HeaderBar extends React.Component {
   render() {
-    const { question } = this.props;
+    const { question, text } = this.props;
 
     return (
       <Header>
@@ -13,7 +13,9 @@ export default class HeaderBar extends React.Component {
             <Text style={styles.text}>
               Question {question[0]} of {question[1]}
             </Text>
-          ) : null}
+          ) : (
+            <Text style={styles.text}>{text}</Text>
+          )}
         </Body>
       </Header>
     );

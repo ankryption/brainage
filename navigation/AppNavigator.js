@@ -1,6 +1,7 @@
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 
 import Login from '../screens/Login';
+import Results from '../screens/Results';
 import Landing from '../screens/Landing';
 import Onboard1 from '../screens/Onboard1';
 import Onboard2 from '../screens/Onboard2';
@@ -28,6 +29,7 @@ import Instruction1 from '../screens/Instruction1';
 export default createAppContainer(
   createSwitchNavigator({
     Home: Login,
+    Results: Results,
     Landing: Landing,
     Onboard1: Onboard1,
     Onboard2: Onboard2,

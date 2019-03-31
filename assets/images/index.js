@@ -1,5 +1,9 @@
 export default {
+  share: require('./share.png'),
+  results: require('./results.png'),
   clock: require('./clock.png'),
+  score: require('./score.png'),
+  clock2: require('./clock2.png'),
   clear: require('./clear.png'),
   man: require('./man.png'),
   tab: require('./tab.png'),
