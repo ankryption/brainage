@@ -12,6 +12,7 @@ export default class Login extends React.Component {
       <Container style={styles.wrapper}>
         <View style={styles.logoContainer}>
           <Image source={images.brainage} style={styles.icon} />
+          <Image source={images.man} style={styles.man} />
         </View>
         <View style={styles.buttonContainer}>
           <Button
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
   logoContainer: {
     padding: 16,
     height: 128,
-    marginTop: 128,
+    marginTop: 70,
   },
   button: {
     margin: 16,
@@ -58,6 +59,10 @@ const styles = StyleSheet.create({
     fontSize: 24,
   },
   buttonContainer: {
-    marginTop: 90,
+    marginTop: 180,
+  },
+  man: {
+    marginTop: 30,
+    marginLeft: 35,
   },
 });
