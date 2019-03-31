@@ -27,7 +27,7 @@ import Instruction1 from '../screens/Instruction1';
 
 export default createAppContainer(
   createSwitchNavigator({
-    Home: Question5,
+    Home: Question7,
     Landing: Landing,
     Onboard1: Onboard1,
     Onboard2: Onboard2,
