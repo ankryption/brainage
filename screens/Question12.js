@@ -18,6 +18,7 @@ export default class Question12 extends React.Component {
           <Question title='This is a clock face, please put the hour markers and the time, ten minutes to eleven o`clock.' />
           <PlaySound file={sounds.sound2} />
           <Image source={images.clock} style={styles.clock} />
+          <Image source={images.clear} style={styles.clear} />
           <Button
             style={styles.button}
             onPress={() => navigation.navigate('Instruction1')}
@@ -41,6 +42,14 @@ const styles = StyleSheet.create({
   clock: {
     marginTop: 10,
     marginLeft: 105,
+    justifyContent: 'center',
+  },
+  clear: {
+    width: 40,
+    height: 40,
+    marginTop: 380,
+    marginLeft: 320,
+    position: 'absolute',
     justifyContent: 'center',
   },
   button: {
