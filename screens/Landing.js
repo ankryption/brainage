@@ -24,6 +24,7 @@ export default class Landing extends React.Component {
               <Text style={styles.buttonText}>Start</Text>
             </Button>
           </View>
+          <Image source={images.mascot} style={styles.mascot} />
         </Content>
         <View style={styles.tabContainer}>
           <Image source={images.tab} style={styles.tab} />
@@ -73,5 +74,9 @@ const styles = StyleSheet.create({
   user: {
     width: 30,
     height: 30,
+  },
+  mascot: {
+    marginLeft: 240,
+    marginTop: 100,
   },
 });
