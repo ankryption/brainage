@@ -3,6 +3,7 @@ import { StyleSheet, Text, Image } from 'react-native';
 import { Container, Content, View } from 'native-base';
 
 import sounds from '../assets/sounds';
+import images from '../assets/images';
 import Question from '../components/Question';
 import Footer from '../components/Footer';
 import HeaderBar from '../components/HeaderBar';
