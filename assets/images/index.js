@@ -1,6 +1,7 @@
 export default {
   tab: require('./tab.png'),
   user: require('./user.png'),
+  input: require('./input.png'),
   help: require('./help.png'),
   speaker: require('./speaker.png'),
   brainage: require('./brainage.png'),

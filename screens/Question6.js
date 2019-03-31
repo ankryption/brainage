@@ -1,9 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text } from 'react-native';
-import { Container, Content, View, Button } from 'native-base';
+import { StyleSheet, Text, Image } from 'react-native';
+import { Container, Content, View } from 'native-base';
 
 import sounds from '../assets/sounds';
-import Input from '../components/Input';
+import images from '../assets/images';
 import Question from '../components/Question';
 import Footer from '../components/Footer';
 import HeaderBar from '../components/HeaderBar';
@@ -21,6 +21,7 @@ export default class Question6 extends React.Component {
             <Text>A. How much do you have left?</Text>
           </View>
           <PlaySound file={sounds.sound2} />
+          <Image source={images.input} style={styles.input} />
           <Microphone />
         </Content>
         <Footer next='Question7' />
@@ -37,5 +38,10 @@ const styles = StyleSheet.create({
     fontSize: 17,
     fontWeight: 'bold',
     alignItems: 'center',
+  },
+  input: {
+    marginTop: 30,
+    marginLeft: 110,
+    justifyContent: 'center',
   },
 });
