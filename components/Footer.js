@@ -15,7 +15,7 @@ class Footer extends React.Component {
         <Col style={styles.left}>
           {!nohelp ? (
             <View style={styles.help}>
-              <Image source={images.help} style={styles.icon} />
+              <Image source={images.mascot} style={styles.icon} />
               <Text style={styles.iconTitle}>Help</Text>
             </View>
           ) : null}
@@ -44,6 +44,11 @@ const styles = StyleSheet.create({
     bottom: 0,
     padding: 16,
     position: 'absolute',
+  },
+  icon: {
+    width: 40,
+    height: 40,
+    marginBottom: 5,
   },
   left: {
     alignItems: 'flex-start',
