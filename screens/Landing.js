@@ -18,7 +18,6 @@ export default class Landing extends React.Component {
           <View style={styles.container}>
             <Text style={styles.text}>TAKE THE TEST</Text>
             <Button
-              info
               style={styles.button}
               onPress={() => navigation.navigate('Instruction1')}
             >

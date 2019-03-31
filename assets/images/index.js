@@ -1,4 +1,7 @@
 export default {
+  clock: require('./clock.png'),
+  clear: require('./clear.png'),
+  man: require('./man.png'),
   tab: require('./tab.png'),
   time: require('./time.png'),
   shapes: require('./shapes.png'),
