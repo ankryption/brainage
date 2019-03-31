@@ -1,6 +1,7 @@
 export default {
   tab: require('./tab.png'),
   time: require('./time.png'),
+  shapes: require('./shapes.png'),
   user: require('./user.png'),
   input: require('./input.png'),
   help: require('./help.png'),
